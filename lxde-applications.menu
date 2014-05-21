@@ -1,0 +1,97 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+ "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
+
+<Menu>
+
+	<Name>Applications</Name>
+	<Directory>lxde-menu-applications.directory</Directory>
+
+	<!-- Read standard .directory and .desktop file locations -->
+	<DefaultAppDirs/>
+	<DefaultDirectoryDirs/>
+    <AppDir>/usr/share/kano-apps/apps</AppDir>
+    <AppDir>/usr/share/kano-apps/extras</AppDir>
+
+	<!-- Read in overrides and child menus from applications-merged/ -->
+	<DefaultMergeDirs/>
+
+	<!-- Books Submenu -->
+	<Menu>
+		<Name>Books</Name>
+		<Directory>kano-books.directory</Directory>
+		<Include>
+		    <Category>Books</Category>
+		</Include>
+	</Menu>
+    <!-- End Books -->
+
+	<!-- Levels Submenu -->
+	<Menu>
+		<Name>Levels</Name>
+		<Directory>kano-levels.directory</Directory>
+		<Include>
+			<And>
+				<Category>Kano</Category>
+				<Category>Development</Category>
+			</And>
+		</Include>
+	</Menu>
+    <!-- End Levels -->
+
+	<!-- Tools Submenu -->
+	<Menu>
+		<Name>Tools</Name>
+		<Directory>kano-tools.directory</Directory>
+		<Include>
+            <Or>
+                <Category>Tools</Category>
+                <!-- TODO: <And>
+                    <Category>Utility</Category>
+                    <Not><Category>System</Category></Not>
+                </And> -->
+            </Or>
+		</Include>
+	</Menu>
+    <!-- End Tools -->
+
+	<!-- Extras Submenu -->
+	<Menu>
+		<Name>Extras</Name>
+		<Directory>kano-extras.directory</Directory>
+		<Include>
+			<Category>Extras</Category>
+		</Include>
+	</Menu>
+    <!-- End Extras -->
+
+    <!-- Settings Submenu -->
+	<Menu>
+		<Name>DesktopSettings</Name>
+		<Directory>lxde-settings.directory</Directory>
+		<OnlyUnallocated/>
+		<Include>
+			<Or>
+				<Category>Settings</Category>
+				<Category>PackageManager</Category>
+				<Category>System</Category>
+			</Or>
+		</Include>
+		<Layout>
+			<Merge type="menus"/>
+			<Merge type="files"/>
+		</Layout>
+
+	</Menu>
+    <!-- End Settings -->
+
+	<Layout>
+		<Menuname>Books</Menuname>
+		<Menuname>Levels</Menuname>
+		<Separator/>
+		<Merge type="files"/>
+		<Merge type="menus"/>
+		<Separator/>
+		<Menuname>DesktopSettings</Menuname>
+	</Layout>
+
+</Menu> <!-- End Applications -->
