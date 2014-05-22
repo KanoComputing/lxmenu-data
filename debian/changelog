@@ -1,5 +1,5 @@
-lxmenu-kano (1.0-1) unstable; urgency=low
+lxmenu-data (0.1.2-3~kano) unstable; urgency=low
 
-  * Initial packaging.
+  * Stripped-down version of the original package
 
  -- Team Kano <dev@kano.me>  Wed, 21 May 2014 11:42:42 +0000

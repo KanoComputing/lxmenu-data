@@ -1,18 +1,15 @@
-Source: lxmenu-kano
+Source: lxmenu-data
 Maintainer: Team Kano <dev@kano.me>
 Section: x11
 Priority: optional
 Standards-Version: 3.9.4
 Build-Depends: debhelper (>=9.0.0)
 
-Package: lxmenu-kano
+Package: lxmenu-data
 Architecture: all
 Depends: ${misc:Depends}
-Provides: lxmenu-data
-Conflicts: lxmenu-data
-Replaces: lxmenu-data
 Description: Kano modified LXDE menu specification
  This package provides a menu setup for LXDE that has been modified
  for Kano OS.
  .
- It is largely based on the lxmenu-data Debian package.
+ It is derived from the original lxmenu-data Debian package.
