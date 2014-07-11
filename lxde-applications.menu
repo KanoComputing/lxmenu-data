@@ -64,34 +64,12 @@
 	</Menu>
     <!-- End Extras -->
 
-    <!-- Settings Submenu -->
-	<Menu>
-		<Name>DesktopSettings</Name>
-		<Directory>lxde-settings.directory</Directory>
-		<OnlyUnallocated/>
-		<Include>
-			<Or>
-				<Category>Settings</Category>
-				<Category>PackageManager</Category>
-				<Category>System</Category>
-			</Or>
-		</Include>
-		<Layout>
-			<Merge type="menus"/>
-			<Merge type="files"/>
-		</Layout>
-
-	</Menu>
-    <!-- End Settings -->
-
 	<Layout>
 		<Menuname>Books</Menuname>
 		<Menuname>Levels</Menuname>
 		<Separator/>
 		<Merge type="files"/>
 		<Merge type="menus"/>
-		<Separator/>
-		<Menuname>DesktopSettings</Menuname>
 	</Layout>
 
 </Menu> <!-- End Applications -->
