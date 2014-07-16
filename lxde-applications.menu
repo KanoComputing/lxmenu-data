@@ -9,21 +9,11 @@
 	<!-- Read standard .directory and .desktop file locations -->
 	<DefaultAppDirs/>
 	<DefaultDirectoryDirs/>
-    <AppDir>/usr/share/kano-apps/apps</AppDir>
-    <AppDir>/usr/share/kano-apps/extras</AppDir>
+    <AppDir>/usr/share/kano-applications</AppDir>
+    <AppDir>/usr/local/share/kano-applications</AppDir>
 
 	<!-- Read in overrides and child menus from applications-merged/ -->
 	<DefaultMergeDirs/>
-
-	<!-- Books Submenu -->
-	<Menu>
-		<Name>Books</Name>
-		<Directory>kano-books.directory</Directory>
-		<Include>
-		    <Category>Books</Category>
-		</Include>
-	</Menu>
-    <!-- End Books -->
 
 	<!-- Levels Submenu -->
 	<Menu>
@@ -54,22 +44,64 @@
 	</Menu>
     <!-- End Tools -->
 
-	<!-- Extras Submenu -->
+	<!-- Games Submenu -->
 	<Menu>
-		<Name>Extras</Name>
-		<Directory>kano-extras.directory</Directory>
+		<Name>Games</Name>
+		<Directory>kano-games.directory</Directory>
 		<Include>
-			<Category>Extras</Category>
+			<Category>games</Category>
 		</Include>
 	</Menu>
-    <!-- End Extras -->
+    <!-- End Games -->
+
+	<!-- Media Submenu -->
+	<Menu>
+		<Name>Media</Name>
+		<Directory>kano-media.directory</Directory>
+		<Include>
+		    <Category>media</Category>
+		</Include>
+	</Menu>
+    <!-- End Media -->
+
+	<!-- Code Submenu -->
+	<Menu>
+		<Name>Code</Name>
+		<Directory>kano-code.directory</Directory>
+		<Include>
+		    <Category>code</Category>
+		</Include>
+	</Menu>
+    <!-- End Code -->
+
+	<!-- Tools Submenu -->
+	<Menu>
+		<Name>Tools</Name>
+		<Directory>kano-tools.directory</Directory>
+		<Include>
+		    <Category>tools</Category>
+		</Include>
+	</Menu>
+    <!-- End Tools -->
+
+	<!-- Others Submenu -->
+	<Menu>
+		<Name>Others</Name>
+		<Directory>kano-others.directory</Directory>
+		<Include>
+		    <Category>others</Category>
+		</Include>
+	</Menu>
+    <!-- End Others -->
 
 	<Layout>
-		<Menuname>Books</Menuname>
 		<Menuname>Levels</Menuname>
 		<Separator/>
-		<Merge type="files"/>
-		<Merge type="menus"/>
+		<Menuname>Games</Menuname>
+		<Menuname>Media</Menuname>
+		<Menuname>Code</Menuname>
+		<Menuname>Tools</Menuname>
+		<Menuname>Others</Menuname>
 	</Layout>
 
 </Menu> <!-- End Applications -->

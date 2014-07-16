@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=Tools
-Comment=Desktop accessories
-Icon=/usr/share/kano-apps/icons/terminal.png
+Comment=Various tools
+Icon=settings
 Type=Directory
