@@ -15,19 +15,6 @@
 	<!-- Read in overrides and child menus from applications-merged/ -->
 	<DefaultMergeDirs/>
 
-	<!-- Levels Submenu -->
-	<Menu>
-		<Name>Levels</Name>
-		<Directory>kano-levels.directory</Directory>
-		<Include>
-			<And>
-				<Category>Kano</Category>
-				<Category>Development</Category>
-			</And>
-		</Include>
-	</Menu>
-    <!-- End Levels -->
-
 	<!-- Tools Submenu -->
 	<Menu>
 		<Name>Tools</Name>
