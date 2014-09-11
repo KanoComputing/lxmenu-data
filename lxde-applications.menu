@@ -81,6 +81,16 @@
 	</Menu>
     <!-- End Others -->
 
+	<!-- Experimental Submenu -->
+	<Menu>
+		<Name>Experimental</Name>
+		<Directory>kano-experimental.directory</Directory>
+		<Include>
+		    <Category>experimental</Category>
+		</Include>
+	</Menu>
+    <!-- End Others -->
+
 	<Layout>
 		<Menuname>Levels</Menuname>
 		<Separator/>
@@ -89,6 +99,7 @@
 		<Menuname>Code</Menuname>
 		<Menuname>Tools</Menuname>
 		<Menuname>Others</Menuname>
+		<Menuname>Experimental</Menuname>
 	</Layout>
 
 </Menu> <!-- End Applications -->
