@@ -1,3 +1,9 @@
+lxmenu-data (0.1.5-1~kano) unstable; urgency=low
+
+  * Increased version to coexist with Jessie
+
+ -- Team Kano <dev@kano.me>  Tue, 13 Oct 2015 19:29:56 +0100
+
 lxmenu-data (0.1.2-3~kano) unstable; urgency=low
 
   * Stripped-down version of the original package
