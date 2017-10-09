@@ -1,5 +1,8 @@
 [Desktop Entry]
-Name=Preferences
-Comment=Personal preferences
-Icon=preferences-desktop
+Encoding=UTF-8
 Type=Directory
+Icon=preferences-desktop
+Name=Preferences
+Name[es_AR]=Preferencias
+Comment=Personal preferences
+Comment[es_AR]=Configuración personal

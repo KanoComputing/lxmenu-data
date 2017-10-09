@@ -1,3 +1,9 @@
+lxmenu-data (3.9.2-0~kano) unstable; urgency=low
+
+  * Argentinian Spanish translations for the LXPanel menu (backport)
+
+ -- Team Kano <dev@kano.me>  Mon, 9 Oct 2017 13:26:56 +0100
+
 lxmenu-data (0.1.5-1~kano) unstable; urgency=low
 
   * Increased version to coexist with Jessie

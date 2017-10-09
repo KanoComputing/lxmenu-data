@@ -1,5 +1,8 @@
 [Desktop Entry]
-Name=Code
-Comment=Apps for coding
-Icon=terminal-app
+Encoding=UTF-8
 Type=Directory
+Icon=terminal-app
+Name=Code
+Name[es_AR]=Programación
+Comment=Apps for coding
+Comment[es_AR]=Haz realidad tus ideas

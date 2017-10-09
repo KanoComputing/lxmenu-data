@@ -1,5 +1,8 @@
 [Desktop Entry]
-Name=Others
-Comment=Anything else
-Icon=feedback
+Encoding=UTF-8
 Type=Directory
+Icon=feedback
+Name=Others
+Name[es_AR]=Otros
+Comment=Anything else
+Comment[es_AR]=Todo lo demás

@@ -1,5 +1,8 @@
 [Desktop Entry]
-Name=Experimental
-Comment=Preview of apps still in development
-Icon=experimental
+Encoding=UTF-8
 Type=Directory
+Icon=experimental
+Name=Experimental
+Name[es_AR]=Experimental
+Comment=Preview of apps still in development
+Comment[es_AR]=Vista previa de aplicaciones en desarrollo
