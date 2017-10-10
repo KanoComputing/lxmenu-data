@@ -1,5 +1,8 @@
 [Desktop Entry]
-Name=Tools
-Comment=Various tools
-Icon=kano-settings
+Encoding=UTF-8
 Type=Directory
+Icon=kano-settings
+Name=Tools
+Name[es_AR]=Herramientas
+Comment=Various tools
+Comment[es_AR]=Cosas útiles

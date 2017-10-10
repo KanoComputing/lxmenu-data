@@ -2,24 +2,23 @@
  "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
 
 <Menu>
+    <Name>Applications</Name>
+    <Directory>lxde-menu-applications.directory</Directory>
 
-	<Name>Applications</Name>
-	<Directory>lxde-menu-applications.directory</Directory>
-
-	<!-- Read standard .directory and .desktop file locations -->
-	<DefaultAppDirs/>
-	<DefaultDirectoryDirs/>
+    <!-- Read standard .directory and .desktop file locations -->
+    <DefaultAppDirs/>
+    <DefaultDirectoryDirs/>
     <AppDir>/usr/share/kano-applications</AppDir>
     <AppDir>/usr/local/share/kano-applications</AppDir>
 
-	<!-- Read in overrides and child menus from applications-merged/ -->
-	<DefaultMergeDirs/>
+    <!-- Read in overrides and child menus from applications-merged/ -->
+    <DefaultMergeDirs/>
 
-	<!-- Tools Submenu -->
-	<Menu>
-		<Name>Tools</Name>
-		<Directory>kano-tools.directory</Directory>
-		<Include>
+    <!-- Tools Submenu -->
+    <Menu>
+        <Name>Tools</Name>
+        <Directory>kano-tools.directory</Directory>
+        <Include>
             <Or>
                 <Category>Tools</Category>
                 <!-- TODO: <And>
@@ -27,79 +26,111 @@
                     <Not><Category>System</Category></Not>
                 </And> -->
             </Or>
-		</Include>
-	</Menu>
+        </Include>
+    </Menu>
     <!-- End Tools -->
 
-	<!-- Games Submenu -->
-	<Menu>
-		<Name>Games</Name>
-		<Directory>kano-games.directory</Directory>
-		<Include>
-			<Category>games</Category>
-		</Include>
-	</Menu>
+    <!-- Games Submenu -->
+    <Menu>
+        <Name>Games</Name>
+        <Directory>kano-games.directory</Directory>
+        <Include>
+            <Category>games</Category>
+        </Include>
+    </Menu>
     <!-- End Games -->
 
-	<!-- Media Submenu -->
-	<Menu>
-		<Name>Media</Name>
-		<Directory>kano-media.directory</Directory>
-		<Include>
-		    <Category>media</Category>
-		</Include>
-	</Menu>
+    <!-- Media Submenu -->
+    <Menu>
+        <Name>Media</Name>
+        <Directory>kano-media.directory</Directory>
+        <Include>
+            <Category>media</Category>
+        </Include>
+    </Menu>
     <!-- End Media -->
 
-	<!-- Code Submenu -->
-	<Menu>
-		<Name>Code</Name>
-		<Directory>kano-code.directory</Directory>
-		<Include>
-		    <Category>code</Category>
-		</Include>
-	</Menu>
+    <!-- Code Submenu -->
+    <Menu>
+        <Name>Code</Name>
+        <Directory>kano-code.directory</Directory>
+        <Include>
+            <Category>code</Category>
+        </Include>
+    </Menu>
     <!-- End Code -->
 
-	<!-- Tools Submenu -->
-	<Menu>
-		<Name>Tools</Name>
-		<Directory>kano-tools.directory</Directory>
-		<Include>
-		    <Category>tools</Category>
-		</Include>
-	</Menu>
+    <!-- Tools Submenu -->
+    <Menu>
+        <Name>Tools</Name>
+        <Directory>kano-tools.directory</Directory>
+        <Include>
+            <Category>tools</Category>
+        </Include>
+    </Menu>
     <!-- End Tools -->
 
-	<!-- Others Submenu -->
-	<Menu>
-		<Name>Others</Name>
-		<Directory>kano-others.directory</Directory>
-		<Include>
-		    <Category>others</Category>
-		</Include>
-	</Menu>
+    <!-- Others Submenu -->
+    <Menu>
+        <Name>Others</Name>
+        <Directory>kano-others.directory</Directory>
+        <Include>
+            <Category>others</Category>
+        </Include>
+    </Menu>
     <!-- End Others -->
 
-	<!-- Experimental Submenu -->
-	<Menu>
-		<Name>Experimental</Name>
-		<Directory>kano-experimental.directory</Directory>
-		<Include>
-		    <Category>experimental</Category>
-		</Include>
-	</Menu>
+    <!-- Experimental Submenu -->
+    <Menu>
+        <Name>Experimental</Name>
+        <Directory>kano-experimental.directory</Directory>
+        <Include>
+            <Category>experimental</Category>
+        </Include>
+    </Menu>
     <!-- End Others -->
 
-	<Layout>
-		<Menuname>Levels</Menuname>
-		<Separator/>
-		<Menuname>Games</Menuname>
-		<Menuname>Media</Menuname>
-		<Menuname>Code</Menuname>
-		<Menuname>Tools</Menuname>
-		<Menuname>Others</Menuname>
-		<Menuname>Experimental</Menuname>
-	</Layout>
+    <!-- Apps Item -->
+    <Menu>
+        <Name>Apps</Name>
+        <Include>
+            <Filename>kano-apps.desktop</Filename>
+        </Include>
+    </Menu>
+    <!-- End Apps Item -->
+
+    <!-- Files Item -->
+    <Menu>
+        <Name>Files</Name>
+        <Include>
+            <Filename>files.desktop</Filename>
+        </Include>
+    </Menu>
+    <!-- End Apps Item -->
+
+    <!-- Shutdown Item -->
+    <Menu>
+        <Name>Shutdown</Name>
+        <Include>
+            <Filename>kano-shutdown.desktop</Filename>
+        </Include>
+    </Menu>
+    <!-- End Apps Item -->
+
+    <Layout>
+        <Menuname>Levels</Menuname>
+        <Separator/>
+        <Menuname>Games</Menuname>
+        <Menuname>Media</Menuname>
+        <Menuname>Code</Menuname>
+        <Menuname>Tools</Menuname>
+        <Menuname>Others</Menuname>
+        <Menuname>Experimental</Menuname>
+        <Separator/>
+        <Menuname inline="true">Apps</Menuname>
+        <Menuname inline="true">Files</Menuname>
+        <Separator/>
+        <Menuname inline="true">Shutdown</Menuname>
+    </Layout>
 
 </Menu> <!-- End Applications -->

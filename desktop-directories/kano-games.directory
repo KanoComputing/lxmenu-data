@@ -1,5 +1,8 @@
 [Desktop Entry]
-Name=Games
-Comment=Time to play
-Icon=minecraft
+Encoding=UTF-8
 Type=Directory
+Icon=minecraft
+Name=Games
+Name[es_AR]=Juegos
+Comment=Time to play
+Comment[es_AR]=¡Juguemos!
