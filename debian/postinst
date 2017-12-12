@@ -1,0 +1,23 @@
+#!/bin/bash
+#
+# postinst
+#
+# Copyright (C) 2017 Kano Computing Ltd.
+# License: http://www.gnu.org/licenses/gpl-2.0.txt GNU GPL v2
+#
+
+case "$1" in
+    configure)
+        # Delete LXPanel menu cache
+        find /home/*/.cache/menus -type f -delete
+    ;;
+
+    triggered)
+        # Delete LXPanel menu cache
+        find /home/*/.cache/menus -type f -delete
+    ;;
+esac
+
+#DEBHELPER#
+
+exit 0
