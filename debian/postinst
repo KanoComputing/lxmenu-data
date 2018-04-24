@@ -2,19 +2,19 @@
 #
 # postinst
 #
-# Copyright (C) 2017 Kano Computing Ltd.
+# Copyright (C) 2017 - 2018 Kano Computing Ltd.
 # License: http://www.gnu.org/licenses/gpl-2.0.txt GNU GPL v2
 #
 
 case "$1" in
     configure)
         # Delete LXPanel menu cache
-        find /home/*/.cache/menus -type f -delete
+        find /home/*/.cache/menus -type f -delete 2> /dev/null
     ;;
 
     triggered)
         # Delete LXPanel menu cache
-        find /home/*/.cache/menus -type f -delete
+        find /home/*/.cache/menus -type f -delete 2> /dev/null
     ;;
 esac
 
